@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150411160332) do
+ActiveRecord::Schema.define(version: 20150411211711) do
 
   create_table "supporters", force: :cascade do |t|
     t.string   "name"
@@ -22,12 +22,12 @@ ActiveRecord::Schema.define(version: 20150411160332) do
   end
 
   create_table "supporters_trips", id: false, force: :cascade do |t|
-    t.integer "supporters_id"
-    t.integer "trips_id"
+    t.integer "supporter_id"
+    t.integer "trip_id"
   end
 
-  add_index "supporters_trips", ["supporters_id"], name: "index_supporters_trips_on_supporters_id"
-  add_index "supporters_trips", ["trips_id"], name: "index_supporters_trips_on_trips_id"
+  add_index "supporters_trips", ["supporter_id"], name: "index_supporters_trips_on_supporter_id"
+  add_index "supporters_trips", ["trip_id"], name: "index_supporters_trips_on_trip_id"
 
   create_table "trips", force: :cascade do |t|
     t.date     "date"
