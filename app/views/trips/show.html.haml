@@ -15,6 +15,9 @@
 %p
   %b Fire score:
   = @trip.fire_score
+%ul
+  - @trip.supporters.each do |supporter|
+    %li= supporter.name
 
 = link_to 'Edit', edit_trip_path(@trip)
 \|
