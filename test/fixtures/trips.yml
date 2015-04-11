@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-04-11
+  location: MyString
+  opponent: MyString
+  opponent_score: 1
+  fire_score: 1
+
+two:
+  date: 2015-04-11
+  location: MyString
+  opponent: MyString
+  opponent_score: 1
+  fire_score: 1
