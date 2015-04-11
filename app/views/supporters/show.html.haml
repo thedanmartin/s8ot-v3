@@ -9,6 +9,9 @@
 %p
   %b Ejections:
   = @supporter.ejections
+%ul
+  - @supporter.trips.each do |trip|
+    %li= trip.opponent
 
 = link_to 'Edit', edit_supporter_path(@supporter)
 \|
